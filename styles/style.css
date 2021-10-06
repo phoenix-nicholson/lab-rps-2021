@@ -1,1 +1,28 @@
-body
+body {
+    background-color: grey;
+    color:hotpink;
+    
+}
+img {
+height: auto;
+width: 25%;
+border:2px solid hotpink;
+border-radius: 20%;
+}
+p {
+    text-align: center;
+    font-size: larger;
+    font-family: 'Londrina Outline', cursive;
+    font-weight:bold
+}
+#title {
+    font-family: 'Londrina Outline', cursive;
+    text-align:center;
+    font-weight: bold;
+}
+button {
+    font-size: 25px;
+    border-radius: 50%;
+    /* : center; */
+    color:hotpink
+}

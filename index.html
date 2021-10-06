@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap" rel="stylesheet">
     <title>Rock, Paper, Scissors</title>
 </head>
 
@@ -16,27 +19,27 @@
     <h1 id="title">Let's Play Rock, Paper, Scissors!</h1>
    <label> 
     <input value="Rock" type="radio" name="Rock" id="rock-input">
-    <span id="rock"></span>
+    <img src="./assets/rock.png" alt="Rock">
     </label>
 
     <label>
     <input value="Paper" type="radio" name="Rock" id="paper-input">
-    <span id="paper"></span>
+    <img src="./assets/paper.png" alt="Paper">
     </label>
 
     <label>
     <input value="Scissors" type="radio" name="Rock" id="scissor-input">
-    <span id="scissors"></span>
+    <img src="./assets/scissors.png" alt="Scissors">
     </label>
-
-    <button id="play-btn">Play!</button> <br>
+    <br>
     
-    <span id="results">Result</span>
-    
+    <!-- <span id="results">Result</span> -->
+    <br>
     <p>You have won <span id='wins'>0</span>times</p>
     <p>You have lost <span id='losses'>0</span> times</p>
     <p>You have tied <span id='ties'>0</span>times</p>
-
+    
+    <button id="play-btn">Play!</button> <br>
     <script type="module" src="./app.js"></script>
 </body>
 
