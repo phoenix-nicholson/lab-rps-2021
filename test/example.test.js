@@ -6,46 +6,54 @@ const test = QUnit.test;
 
 test('testing if user wins', (expect) => {
     const expected = true;
-    const actual = didUserWin('scissor', 'paper');
+    const actual = didUserWin('Scissors', 'Paper');
     expect.equal(actual, expected);
 });
+
 test('testing if user wins', (expect) => {
     const expected = true;
-    const actual = didUserWin('paper', 'rock');
+    const actual = didUserWin('Paper', 'Rock');
     expect.equal(actual, expected);
 });
+
 test('testing if user wins', (expect) => {
     const expected = true;
-    const actual = didUserWin('rock', 'scissors');
+    const actual = didUserWin('Rock', 'Scissors');
     expect.equal(actual, expected);
 });
+
 test('testing if user looses', (expect) => {
     const expected = false;
-    const actual = didUserWin('scissors', 'rock');
+    const actual = didUserWin('Scissors', 'Rock');
     expect.equal(actual, expected);
 });
+
 test('testing if user looses', (expect) => {
     const expected = false;
-    const actual = didUserWin('rock', 'paper');
+    const actual = didUserWin('Rock', 'Paper');
     expect.equal(actual, expected);
 });
+
 test('testing if user looses', (expect) => {
     const expected = false;
-    const actual = didUserWin('paper', 'scissors');
+    const actual = didUserWin('Paper', 'Scissors');
     expect.equal(actual, expected);
 });
+
 test('testing if user draws', (expect) => {
-    const expected = 'ties';
-    const actual = didUserWin('paper', 'paper');
+    const expected = 'Tie!';
+    const actual = didUserWin('Paper', 'Paper');
     expect.equal(actual, expected);
 });
+
 test('testing if user draws', (expect) => {
-    const expected = 'ties';
-    const actual = didUserWin('scissors', 'scissors');
+    const expected = 'Tie!';
+    const actual = didUserWin('Scissors', 'Scissors');
     expect.equal(actual, expected);
 });
+
 test('testing if user draws', (expect) => {
-    const expected = 'ties';
-    const actual = didUserWin('paper', 'paper');
+    const expected = 'Tie!';
+    const actual = didUserWin('Rock', 'Rock');
     expect.equal(actual, expected);
 });

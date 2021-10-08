@@ -15,7 +15,7 @@ export function didUserWin(userRoll, actualRoll){
     else if (userRoll === 'Paper' && actualRoll === 'Rock') {
         return true;
     }
-    else if (userRoll === 'Scissors' && actualRoll === 'paper') {
+    else if (userRoll === 'Scissors' && actualRoll === 'Paper') {
         return true;
     }
     else {
