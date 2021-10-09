@@ -12,34 +12,40 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">    
     <title>Rock, Paper, Scissors</title>
 </head>
 
 <body>
     <h1 id="title">Let's Play Rock, Paper, Scissors!</h1>
-   <label> 
+    <div id="images">
+    <label> 
     <input value="Rock" type="radio" name="Rock" id="rock-input">
-    <img src="./assets/rock.png" alt="Rock">
+    <img id="rock-image" src="./assets/m-rock.png" alt="Rock">
     </label>
 
     <label>
     <input value="Paper" type="radio" name="Rock" id="paper-input">
-    <img src="./assets/paper.png" alt="Paper">
+    <img id="paper-image" src="./assets/m-paper.png" alt="Paper">
     </label>
 
     <label>
     <input value="Scissors" type="radio" name="Rock" id="scissor-input">
-    <img src="./assets/scissors.png" alt="Scissors">
+    <img id="scissors-image" src="./assets/m-scissors.png" alt="Scissors">
     </label>
     <br>
+    </div>
     
     <!-- <span id="results">Result</span> -->
-    <br>
-    <p>You have won <span id='wins'>0</span>times</p>
-    <p>You have lost <span id='losses'>0</span> times</p>
-    <p>You have tied <span id='ties'>0</span>times</p>
-    
-    <button id="play-btn">Play!</button> <br>
+    <div id="score-div">
+        <br>
+        <p>You have won <span id='wins'>0</span>times</p>
+        <p>You have lost <span id='losses'>0</span> times</p>
+        <p>You have tied <span id='ties'>0</span>times</p>
+    </div>
+    <div>
+        <button id="play-btn">Play!</button> <br>
+    </div>
     <script type="module" src="./app.js"></script>
 </body>
 
